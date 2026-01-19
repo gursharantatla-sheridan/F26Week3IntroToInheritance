@@ -47,6 +47,14 @@ namespace InheritanceExercise
 			CommissionRate = commissionRate;
 		}
 
+		public double Earnings()
+		{
+			return GrossSales * CommissionRate;
+		}
 
+        public override string ToString()
+        {
+			return $"Id = {Id}\nName = {Name}\nGross Sales = {GrossSales:C}\nCommission Rate = {CommissionRate:P}";
+        }
 	}
 }
